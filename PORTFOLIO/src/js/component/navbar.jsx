@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import "../../css/components/navbar.css";
+import "../../css/component/navbar.css";
 
 function Navbar() {
   const linkClass = ({ isActive }) =>

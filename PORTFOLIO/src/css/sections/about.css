@@ -1,0 +1,47 @@
+.content {
+  display: flex;
+  justify-content: normal;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about__title h1{
+  text-align: center;
+  font-family: var(--dynapuff);
+  text-shadow: 2px 2px var(--light-blue);
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.image-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.mini-image {
+  width: 40px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.main-image {
+  width: 450px;
+  height: auto;
+}
+
+.info-list {
+  margin: 0;
+  list-style: none;
+  text-align: left;
+
+}
+
+.about__label {
+  font-family: var(--dynapuff);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
