@@ -1,5 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './component/navbar';
+import Home from './pages/home';
+import About from './pages/about';
+import Portfolio from './pages/portfolio';
 
 function App() {
   return (
@@ -11,7 +14,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
-    );
+  );
 }
 
 export default App;
