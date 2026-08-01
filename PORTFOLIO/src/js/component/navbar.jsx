@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="header__nav">
       <div className="header__logo">
         <Link to="/">
-          <h4>Name</h4>
+          <h4>Lisa portfolio</h4>
         </Link>
       </div>
 
