@@ -13,20 +13,29 @@ function Portfolio() {
             key={artwork.id}
             className="portfolio__item"
             
-            onClick={() => setArtworks(artwork)}>
+            onClick={() => setArtworks(artwork)}>   
+            <img
+              src={artworks.imageURL}
+              alt={artworks.title }
+              className="blockimage"/>
 
-          <div className="block" onClick={(e)=> e.stopPropagation}>
-          <button className="portfolio__button" onClick={() => setArtworks(null)}>X</button>   
-          <img
-            src={artworks.imageURL}
-            alt={artworks.title }
-            className="blockimage"
- s         />
-          </div>
-
+              <div className="words">
+                <h3>{artworks.title}</h3>
+              </div>
           </div>
         ))}
       </div>
+      {artworks && (
+        <div className="portfolio__modal" onClick={() => setArtworks(null)}>
+          <div className="portfolio__modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="x" onClick={() => setArtworks(null)}>X</button>
+            <img src={artworks.imageURL} alt={artworks.title} className="modal-image"/>
+            <div className="art">
+
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
