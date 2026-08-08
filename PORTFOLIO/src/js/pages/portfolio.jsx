@@ -1,12 +1,11 @@
 import { useState } from "react";
-import "../../css/pages/portfolio.css";
 import arts from "../data/artisticabonita";
 
 
-export default function Portfolio() {
+function Portfolio() {
   const [artworks, setArtworks] = useState(null);
   return (
-    <section>
+    <div className="portfolio">
       <h1>Portfolio</h1>
       <div className="portfolio__container">
         {artworks.map((artwork) => (
@@ -23,12 +22,12 @@ export default function Portfolio() {
             alt={artworks.title }
             className="blockimage"
  s         />
-
+          </div>
 
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 
