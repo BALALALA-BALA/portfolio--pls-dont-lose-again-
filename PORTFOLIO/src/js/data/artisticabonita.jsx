@@ -3,8 +3,10 @@ const arts = [
     id: 1,
     title: "definition of un-ugliness",
     description: "A collection of artistic works by Abonita.",
-    imageUrl: "/images/artistic-abonita.jpg",
-    link: "/portfolio/artistic-abonita" 
+    image: "/images/FROG.png",
+    link: "/portfolio/artistic-abonita" ,
+    medium: "Mixed Media",
+    year: 2023
 },
 ];
 
