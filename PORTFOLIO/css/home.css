@@ -1,0 +1,48 @@
+.hero {
+	min-height: calc(100vh - 113px);
+	padding: 32px 20px 24px;
+	display: grid;
+	place-content: center;
+	place-items: center;
+	text-align: center;
+}
+
+.hero > div:first-child {
+	max-width: 650px;
+}
+
+.eyebrow,
+.button {
+	display: none;
+}
+
+h1 {
+	margin: 0;
+	color: var(--ink);
+	font-size: clamp(42px, 6vw, 70px);
+	font-weight: 500;
+	letter-spacing: -1.8px;
+	line-height: 1.1;
+}
+
+.hero h1 em {
+	color: inherit;
+	font-style: normal;
+}
+
+.hero h1 br {
+	display: none;
+}
+
+.hero .intro {
+	display: block;
+	max-width: 500px;
+	margin: 24px auto 0;
+	color: var(--muted);
+	font: 18px/1.45 'Nunito Sans', system-ui, sans-serif;
+	letter-spacing: 0.18px;
+}
+
+.hero-art {
+	display: none;
+}

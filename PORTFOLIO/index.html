@@ -2,12 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <meta name="description" content="Lisa Chen's illustration portfolio." />
+    <title>Lisa Chen — Illustration Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/js/main.jsx"></script>
+    <header class="header">
+      <a class="brand" href="index.html">Lisa portfolio<span>★</span></a>
+      <nav>
+        <a href="index.html" class="current">Home</a>
+        <a href="html/about.html">About</a>
+        <a href="html/portfolio.html">Portfolio</a>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div>
+          <p class="eyebrow"><i></i> Illustration &amp; imagination</p>
+          <h1>Welcome to my portfolio</h1>
+          <p class="intro">
+            This is a simple React portfolio page that now renders correctly.
+          </p>
+          <a class="button" href="html/portfolio.html">See my work <span>→</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="frame">
+            <img src="images/mistr%20george%20unicon.png" alt="" />
+          </div>
+          <b class="spark a">✦</b>
+          <b class="spark b">✷</b>
+          <b class="smile">◡</b>
+        </div>
+      </section>
+    </main>
+    <footer><p>Contact.</p><a href="mailto:hello@lisachen.art">hello@lisachen.art ↗</a>
+      <small>© 2026 Lisa Chen.</small></footer>
   </body>
 </html>

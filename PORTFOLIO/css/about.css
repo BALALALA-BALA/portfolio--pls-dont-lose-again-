@@ -1,0 +1,98 @@
+.about {
+  min-height: calc(100vh - 113px);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 44px 32px;
+}
+
+.sticker {
+  flex: 0 0 200px;
+  width: 200px;
+  height: auto;
+  aspect-ratio: 1;
+  display: block;
+  border: 0;
+  border-radius: 0;
+  background: url('../images/mistr%20george%20unicon.png') center / cover;
+  box-shadow: none;
+  color: transparent;
+  font-size: 0;
+  transform: none;
+}
+
+.sticker strong {
+  display: none;
+}
+
+.about > div:last-child {
+  max-width: 600px;
+}
+
+.about .eyebrow {
+  display: none;
+}
+
+.about h1 {
+  margin: 0 0 3rem;
+  color: var(--ink);
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+  text-shadow: 2px 2px var(--aqua);
+}
+
+.about-copy {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.6;
+  list-style: none;
+}
+
+.tags {
+  display: none;
+}
+
+.easter-egg {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 5;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--aqua);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+  opacity: 0.9;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.easter-egg:hover {
+  transform: rotate(8deg) scale(1.15);
+  opacity: 1;
+}
+
+@media (max-width: 650px) {
+  .about {
+    flex-direction: column;
+    padding: 32px 20px;
+  }
+
+  .sticker {
+    width: 170px;
+    flex-basis: 170px;
+  }
+
+  .about h1 {
+    font-size: 2.35rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.about__label {
+  font-family: var(--dynapuff);
+  font-weight: bold;
+  margin-right: 5px;
+}
