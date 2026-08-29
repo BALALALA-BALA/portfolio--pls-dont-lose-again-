@@ -11,9 +11,8 @@
     --light:#e0caf1;
     --medium:#d06befff;
     --dark:#76107dff;
-	--red: #ff0000;
 
-	--dynapuff: 'DynaPuff', cursive;
+	dynapuff: 'DynaPuff', cursive;
 	font-family: 'Nunito Sans', system-ui, sans-serif;
 	color: var(--ink);
 	background: var(--canvas);
@@ -75,10 +74,7 @@ nav a {
 	transition: color 0.2s ease;
 }
 
-nav a:hover {
-	color: var(--red);
-}
-
+nav a:hover,
 nav a.current {
 	color: var(--violet);
 }
