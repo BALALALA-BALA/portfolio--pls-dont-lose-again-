@@ -11,7 +11,7 @@ const artworks = [
     image: '../artisticabonita/gorge%20the%20uNICorN.jpg', 
     alt: 'A unicorn artwork by Lisa Chen' },
   { 
-    title: 'Frog Friend', 
+    title: 'Mister Froggyson, The Frog.', 
     type: 'Character study', 
     image: '../artisticabonita/FROG.png', 
     alt: 'A cheerful frog character illustration' },
