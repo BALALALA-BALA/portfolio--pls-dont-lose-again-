@@ -3,17 +3,17 @@ const artworks = [
   { 
     title: 'Mister George, Unicon', 
     type: 'Character illustration', 
-    image: '../images/mistr%20george%20unicon.png', 
+    image: '../artisticabonita/mistr%20george%20unicon.png', 
     alt: 'A colorful unicorn character illustration' },
   { 
     title: 'George’s Day Out', 
     type: 'Digital artwork', 
-    image: '../images/gorge%20the%20uNICorN.jpg', 
+    image: '../artisticabonita/gorge%20the%20uNICorN.jpg', 
     alt: 'A unicorn artwork by Lisa Chen' },
   { 
     title: 'Frog Friend', 
     type: 'Character study', 
-    image: '../images/FROG.png', 
+    image: '../artisticabonita/FROG.png', 
     alt: 'A cheerful frog character illustration' },
 ];
 
