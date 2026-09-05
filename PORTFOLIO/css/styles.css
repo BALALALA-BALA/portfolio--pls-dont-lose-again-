@@ -12,7 +12,7 @@
     --medium:#d06befff;
     --dark:#76107dff;
 
-	dynapuff: 'DynaPuff', cursive;
+	--dynapuff: 'DynaPuff', cursive;
 	font-family: 'Nunito Sans', system-ui, sans-serif;
 	color: var(--ink);
 	background: var(--canvas);
