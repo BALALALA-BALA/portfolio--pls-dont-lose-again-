@@ -21,14 +21,6 @@
   white-space: nowrap;
 }
 
-.hero h1 em {
-	color: inherit;
-	font-style: normal;
-}
-
-.hero h1 br {
-	display: none;
-}
 
 .hero-art {
 	display: none;

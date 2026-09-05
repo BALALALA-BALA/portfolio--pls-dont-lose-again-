@@ -80,7 +80,9 @@ nav a {
 	transition: color 0.2s ease;
 }
 
-nav a:hover,
+nav a:hover {
+	color: var(--red);
+}
 nav a.current {
 	color: var(--violet);
 }
