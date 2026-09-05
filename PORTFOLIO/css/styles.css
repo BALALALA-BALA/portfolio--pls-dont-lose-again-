@@ -3,7 +3,7 @@
 :root {
 	--ink: #f3f4f6;
 	--muted: #b8b1c1;
-	--canvas: #16171d;
+	--canvas: #ffffff;
 	--aqua: #8ae5e5;
 	--lilac: #e0caf1;
 	--violet: #d06bef;
@@ -37,7 +37,6 @@ main,
 footer {
 	width: min(1126px, 100%);
 	margin: 0 auto;
-	border-inline: 1px solid #2e303a;
 }
 
 .header {

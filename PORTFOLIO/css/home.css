@@ -1,10 +1,9 @@
 .hero {
 	min-height: calc(100vh - 113px);
-	padding: 32px 20px 24px;
+	padding: 125px max(20px, calc((100vw - 1200px) / 2)) 60px;
 	display: grid;
-	place-content: center;
-	place-items: center;
-	text-align: center;
+	grid-template-rows: auto minmax(400, 1fr);
+	align-items: start;
 }
 
 .hero > div:first-child {
@@ -16,13 +15,17 @@
 	display: none;
 }
 
-h1 {
+.hero-title {
 	margin: 0;
-	color: var(--ink);
-	font-size: clamp(42px, 6vw, 70px);
+	color: var(--light);
+	font-size: clamp(130px, 20vw, 160px);
 	font-weight: 500;
 	letter-spacing: -1.8px;
 	line-height: 1.1;
+	text-align: center;
+	position: relative;
+
+
 }
 
 .hero h1 em {
@@ -32,15 +35,6 @@ h1 {
 
 .hero h1 br {
 	display: none;
-}
-
-.hero .intro {
-	display: block;
-	max-width: 500px;
-	margin: 24px auto 0;
-	color: var(--muted);
-	font: 18px/1.45 'Nunito Sans', system-ui, sans-serif;
-	letter-spacing: 0.18px;
 }
 
 .hero-art {
