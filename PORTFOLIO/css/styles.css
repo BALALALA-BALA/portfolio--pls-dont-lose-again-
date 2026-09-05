@@ -12,6 +12,13 @@
     --medium:#d06befff;
     --dark:#76107dff;
 
+	--red: #df4343e1;
+	--orange: #f8c26a;
+	--yellow: #fff68e;
+	--green: #c8ff8e;
+	--blue: #4a90e2;
+	--purple: #d6a6ff;
+
 	--dynapuff: 'DynaPuff', cursive;
 	font-family: 'Nunito Sans', system-ui, sans-serif;
 	color: var(--ink);
