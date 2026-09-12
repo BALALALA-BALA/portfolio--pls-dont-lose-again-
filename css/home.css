@@ -20,6 +20,9 @@
   text-align: center;
   white-space: nowrap;
   background-image: linear-gradient(45deg, rgb(233, 72, 72), #ffa500, rgb(255, 255, 177), rgb(168, 225, 168), rgb(167, 243, 255), rgba(222, 135, 222, 0.765));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
