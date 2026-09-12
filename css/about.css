@@ -35,7 +35,7 @@
 
 .about h1 {
   margin: 0 0 3rem;
-  color: var(--ink);
+  color: var(--blue);
   font-size: 3rem;
   font-weight: 300;
   letter-spacing: 3px;
@@ -45,7 +45,7 @@
 
 .about-copy {
   margin: 0;
-  color: var(--ink);
+  color: var(--dark-blue);
   font-size: 18px;
   line-height: 1.6;
   list-style: none;

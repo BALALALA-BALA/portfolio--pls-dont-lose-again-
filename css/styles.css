@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Nunito+Sans:wght@400;600;700&display=swap');
 
 :root {
-	--ink: #f3f4f6;
+	--ink: #ffffff;
 	--muted: #b8b1c1;
 	--canvas: #ffffff;
 	--aqua: #8ae5e5;
@@ -16,8 +16,9 @@
 	--orange: #f8c26a;
 	--yellow: #fff68e;
 	--green: #c8ff8e;
-	--blue: #4a90e2;
+	--blue: #99e2ff;
 	--purple: #d6a6ff;
+	--dark-blue: #4b5c72;
 
 	--dynapuff: 'DynaPuff', cursive;
 	font-family: 'Nunito Sans', system-ui, sans-serif;
