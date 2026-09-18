@@ -35,7 +35,7 @@ body {
   border-radius: 12px;
   padding: 0;
   background: rgba(253, 254, 255, 0.9);
-  color: var(--ink);
+  color: var(--dark);
   box-shadow: 0 12px 30px rgba(43, 4, 58, 0.14);
   cursor: pointer;
 }
@@ -88,7 +88,7 @@ dialog {
   border-radius: 12px;
   padding: 18px;
   background: var(--paper);
-  color: var(--ink);
+  color: var(--dark);
   box-shadow: 0 18px 50px rgba(43, 4, 58, 0.24);
 }
 

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Nunito+Sans:wght@400;600;700&display=swap');
 
 :root {
-	--ink: #ffffff;
 	--muted: #b8b1c1;
 	--canvas: #ffffff;
 	--aqua: #8ae5e5;
@@ -22,7 +21,7 @@
 
 	--dynapuff: 'DynaPuff', cursive;
 	font-family: 'Nunito Sans', system-ui, sans-serif;
-	color: var(--ink);
+	color: var(--dark);
 	background: var(--canvas);
 }
 
@@ -40,20 +39,14 @@ body {
 	background: var(--canvas);
 }
 
-.header,
-main,
-footer {
-	width: min(1126px, 100%);
-	margin: 0 auto;
-}
-
 .header {
 	min-height: 113px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px;
-	overflow: hidden;
+	overflow: hidden;width: min(1126px, 100%);
+	margin: 0 auto;
 }
 
 .brand {
@@ -97,7 +90,7 @@ nav .contact {
 h1,
 h2,
 h3 {
-	color: var(--ink);
+	color: var(--dark);
 	font-family: DynaPuff, cursive;
 }
 
