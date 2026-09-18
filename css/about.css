@@ -9,28 +9,12 @@
 .sticker {
   flex: 0 0 200px;
   width: 200px;
-  height: auto;
   aspect-ratio: 1;
-  display: block;
-  border: 0;
-  border-radius: 0;
-  background: url('../artisticabonita/mistr%20george%20unicon.png') center / cover;
-  box-shadow: none;
-  color: transparent;
-  font-size: 0;
-  transform: none;
-}
-
-.sticker strong {
-  display: none;
+  background: url("../artisticabonita/mistr%20george%20unicon.png") center / cover;
 }
 
 .about > div:last-child {
   max-width: 600px;
-}
-
-.about .eyebrow {
-  display: none;
 }
 
 .about h1 {
@@ -49,10 +33,6 @@
   font-size: 18px;
   line-height: 1.6;
   list-style: none;
-}
-
-.tags {
-  display: none;
 }
 
 .easter-egg {
@@ -87,12 +67,13 @@
   }
 
   .about h1 {
-    font-size: 2.35rem;
     margin-bottom: 1.5rem;
+    font-size: 2.35rem;
   }
 }
+
 .about__label {
+  margin-right: 5px;
   font-family: var(--dynapuff);
   font-weight: bold;
-  margin-right: 5px;
 }
