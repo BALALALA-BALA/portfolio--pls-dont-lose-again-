@@ -29,6 +29,12 @@ const artworks = [
     image: "../artisticabonita/puffy_girl.png",
     alt: "puffy_girl",
   },
+  {
+   title: "mr frog bilboard.png",
+    type: "Doodle",
+    image: "../artisticabonita/mr%20frog%20bilboard.png",
+    alt: "mistr frog billybord",
+  },
 ];
 
 const gallery = document.querySelector(".cards");
