@@ -18,6 +18,17 @@ const artworks = [
     image: "../artisticabonita/FROG.png",
     alt: "A cheerful frog character illustration",
   },
+  {  title: "Random Girl on Stage.",
+    type: "pen on Paper, the Boring Classic",
+    image: "../artisticabonita/cake_girl.png",
+    alt: "A young girl standing on a stage, depicted in a classic pen drawing style",
+  },
+  {
+   title: "She's Just a Little Puffy...",
+    type: "Doodle",
+    image: "../artisticabonita/puffy_girl.png",
+    alt: "puffy_girl",
+  },
 ];
 
 const gallery = document.querySelector(".cards");
