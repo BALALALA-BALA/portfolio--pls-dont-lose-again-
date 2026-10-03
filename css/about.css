@@ -5,7 +5,13 @@
   gap: 20px;
   padding: 44px 32px;
 }
-
+.floweh {
+  display: inline-block;
+  width: auto;
+  height: 0.72em;
+  margin-left: 0.25em;
+  vertical-align: middle;
+}
 .sticker {
   flex: 0 0 200px;
   width: 200px;

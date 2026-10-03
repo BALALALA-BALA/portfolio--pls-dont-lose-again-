@@ -6,7 +6,13 @@
   align-items: start;
   overflow: hidden;
 }
-
+.floweh {
+  display: inline-block;
+  width: auto;
+  height: 0.72em;
+  margin-left: 0.25em;
+  vertical-align: middle;
+}
 .hero-title {
   position: relative;
   z-index: 2;
