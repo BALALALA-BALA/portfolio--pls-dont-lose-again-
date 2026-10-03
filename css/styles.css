@@ -57,6 +57,14 @@ body {
   opacity: 0.8;
 }
 
+.floweh {
+  display: inline-block;
+  width: auto;
+  height: 0.72em;
+  margin-left: 0.25em;
+  vertical-align: middle;
+}
+
 nav {
   display: flex;
   align-items: center;
