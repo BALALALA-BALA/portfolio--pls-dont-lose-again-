@@ -44,6 +44,7 @@ const artworks = [
 ];
 
 // Everything else in the artisticabonita folder. Add the file name here and it shows up with its file name as the title.
+// Videos also need a cover picture with the same name in artisticabonita/video/posters (NAME.jpg).
 const moreFiles = [
   "jpg/2484.JPG",
   "jpg/49c9b04d79ed50d6e565222db230a6db(1).JPG",
@@ -135,6 +136,7 @@ moreFiles.forEach((file) => {
     image: "../artisticabonita/" + encodeURI(file),
     alt: name,
     video: isVideo,
+    poster: "../artisticabonita/" + encodeURI(file.replace("video/", "video/posters/").replace(".mp4", ".jpg")),
   });
 });
 
@@ -149,9 +151,7 @@ artworks.forEach((artwork) => {
   const card = document.createElement("button");
   card.className = "card";
   card.type = "button";
-  const media = artwork.video
-    ? `<video src="${artwork.image}" aria-label="${artwork.alt}" muted loop autoplay playsinline preload="metadata"></video>`
-    : `<img src="${artwork.image}" alt="${artwork.alt}" loading="lazy">`;
+  const media = `<img src="${artwork.video ? artwork.poster : artwork.image}" alt="${artwork.alt}" loading="lazy">`;
   card.innerHTML = `
     ${media}
     <span><strong>${artwork.title}</strong><small>${artwork.type}</small></span>
@@ -161,6 +161,7 @@ artworks.forEach((artwork) => {
     video.hidden = !artwork.video;
     if (artwork.video) {
       video.src = artwork.image;
+      video.play();
     } else {
       image.src = artwork.image;
       image.alt = artwork.alt;
