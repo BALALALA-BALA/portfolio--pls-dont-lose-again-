@@ -35,6 +35,12 @@ const artworks = [
     image: "../artisticabonita/mr%20frog%20bilboard.png",
     alt: "mistr frog billybord",
   },
+   {
+   title: "Space Adventure",
+    type: "drawing with pencil",
+    image: "https://hillarycbn22.wixsite.com/creative-portfolio/portfolio-collections/illustration/space-adventure",
+    alt: "A whimsical space adventure illustration featuring a rocket ship and planets",
+  },
 ];
 
 const gallery = document.querySelector(".cards");
