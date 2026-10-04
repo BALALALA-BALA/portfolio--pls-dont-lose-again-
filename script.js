@@ -151,6 +151,8 @@ artworks.forEach((artwork) => {
   const card = document.createElement("button");
   card.className = "card";
   card.type = "button";
+  card.dataset.kind = artwork.video ? "videos" : "images";
+  card.hidden = Boolean(artwork.video);
   const media = `<img src="${artwork.video ? artwork.poster : artwork.image}" alt="${artwork.alt}" loading="lazy">`;
   card.innerHTML = `
     ${media}
@@ -171,6 +173,17 @@ artworks.forEach((artwork) => {
     dialog.showModal();
   });
   gallery.append(card);
+});
+
+// The Images / Videos buttons above the gallery show one kind of card at a time.
+const tabs = document.querySelectorAll(".tab");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((other) => other.classList.toggle("current", other === tab));
+    gallery.querySelectorAll(".card").forEach((card) => {
+      card.hidden = card.dataset.kind !== tab.dataset.show;
+    });
+  });
 });
 
 dialog.addEventListener("close", () => video.pause());

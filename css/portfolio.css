@@ -8,6 +8,35 @@ body {
   padding: 3rem;
 }
 
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  border: 2px solid var(--lilac);
+  border-radius: 999px;
+  padding: 8px 22px;
+  background: transparent;
+  color: var(--lilac);
+  font: 500 16px var(--dynapuff);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.tab:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.tab.current {
+  border-color: var(--violet);
+  color: var(--violet);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
