@@ -105,6 +105,13 @@ img.bg {
   z-index: -2;
 }
 
+@media screen and (max-width: 1024px) {
+  img.bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
 @media (max-width: 560px) {
   .header {
     min-height: 88px;
