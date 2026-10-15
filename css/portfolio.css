@@ -8,6 +8,35 @@ body {
   padding: 3rem;
 }
 
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  border: 2px solid var(--lilac);
+  border-radius: 999px;
+  padding: 8px 22px;
+  background: transparent;
+  color: var(--lilac);
+  font: 500 16px var(--dynapuff);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.tab:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.tab.current {
+  border-color: var(--violet);
+  color: var(--violet);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -34,7 +63,8 @@ body {
   cursor: pointer;
 }
 
-.card > img {
+.card > img,
+.card > video {
   width: 100%;
   height: 100%;
   min-height: 300px;
@@ -43,7 +73,8 @@ body {
   transition: transform 0.3s ease;
 }
 
-.card:hover > img {
+.card:hover > img,
+.card:hover > video {
   transform: scale(1.05);
 }
 
@@ -81,7 +112,8 @@ dialog::backdrop {
   background: rgba(43, 4, 58, 0.42);
 }
 
-dialog img {
+dialog img,
+dialog video {
   width: 100%;
   max-height: 65vh;
   object-fit: contain;
