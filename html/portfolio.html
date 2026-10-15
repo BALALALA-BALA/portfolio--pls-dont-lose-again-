@@ -14,11 +14,16 @@
         <a href="../index.html">Home</a>
         <a href="about.html">About</a>
         <a href="portfolio.html" class="current">Portfolio</a>
+        <a href="reward.html">Reward</a>
       </nav>
     </header>
 
     <main>
       <section class="work">
+        <div class="tabs">
+          <button type="button" class="tab current" data-show="images">Images</button>
+          <button type="button" class="tab" data-show="videos">Videos</button>
+        </div>
         <div class="cards" aria-label="Artwork gallery"></div>
       </section>
     </main>
@@ -26,6 +31,7 @@
     <dialog id="art-dialog">
       <button aria-label="Close">×</button>
       <img alt="" />
+      <video controls loop playsinline hidden></video>
       <p></p>
       <h3></h3>
     </dialog>
